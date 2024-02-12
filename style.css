@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bgColor: #F8F9FA; /* #212529 */
+    --fontColor: #212529; /* #F8F9FA */
+    --hover: #ADB5BD; /* #DEE2E6 */
+}
+
+body {
+    font-family: 'Ubuntu Mono', monospace;
+    background-color: var(--bgColor);
+    color: var(--fontColor);
+    scroll-behavior: smooth;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--fontColor);
+}
+
+header section {
+    margin: 0 5rem;
+}
+
+header section:first-child a img {
+    width: 5rem;
+    border-radius: 2rem;
+    margin: 0.5rem 0;
+}
+
+.tabs-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tabs-list li a {
+    color: #F8F9FA;
+    text-decoration: none
+}
+
+.tabs-list li a:hover {
+    color:#ADB5BD;
+    transition: 0.5s;
+}
+
+.tabs-list li + li {
+    margin-left: 1.5rem;
+}
+
+/* MAIN */
+
+main {
+    text-align: center;
+    margin: 1rem auto;
+}
+
+#sobre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#sobre section {
+    display: flex;
+    overflow:hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+#sobre section div img {
+    width: 20rem;
+}
