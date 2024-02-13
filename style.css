@@ -17,7 +17,7 @@ body {
     background-color: var(--bgColor);
     color: var(--fontColor);
     scroll-behavior: smooth;
-    height: 100%;
+    width: 100%;
 }
 
 /* HEADER */
@@ -62,6 +62,7 @@ header section:first-child a img {
 
 .tabs-list li button {
     border: 0;
+    background-color: transparent;
 }
 
 .tabs-list li button:hover {
@@ -73,16 +74,13 @@ header section:first-child a img {
     height: 2rem;
 }
 
-.tabs-list li:last-child {
-    display: none;
-}
-
 button[data-theme='dark'] {
     background-color: var(--bgColor);
 }
 
 button[data-theme='light'] {
     background-color: var(--bgColor);
+    display: none;
 }
 
 /* MAIN */
@@ -125,6 +123,25 @@ h2 {
 footer {
     color: var(--bgColor);
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--fontColor);
-    height: 9.2rem;
+    height: 6.188rem;
+}
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar {
+    width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 2rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #CED4DA;
+    border-radius: 2rem;
 }
