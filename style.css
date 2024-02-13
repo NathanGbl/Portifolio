@@ -17,6 +17,7 @@ body {
     background-color: var(--bgColor);
     color: var(--fontColor);
     scroll-behavior: smooth;
+    height: 100%;
 }
 
 /* HEADER */
@@ -34,7 +35,7 @@ header section {
 
 header section:first-child a img {
     width: 5rem;
-    border-radius: 2rem;
+    border-radius: 50%;
     margin: 0.5rem 0;
 }
 
@@ -59,6 +60,31 @@ header section:first-child a img {
     margin-left: 1.5rem;
 }
 
+.tabs-list li button {
+    border: 0;
+}
+
+.tabs-list li button:hover {
+    background-color: #495057;
+    transition: 0.5s;
+}
+
+.tabs-list li button img {
+    height: 2rem;
+}
+
+.tabs-list li:last-child {
+    display: none;
+}
+
+button[data-theme='dark'] {
+    background-color: var(--bgColor);
+}
+
+button[data-theme='light'] {
+    background-color: var(--bgColor);
+}
+
 /* MAIN */
 
 main {
@@ -66,20 +92,39 @@ main {
     margin: 1rem auto;
 }
 
-#sobre {
+#about {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-#sobre section {
-    display: flex;
-    overflow:hidden;
-    justify-content: center;
-    align-items: center;
+h2 {
+    margin: 3rem 0;
 }
 
-#sobre section div img {
+#about section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1.5rem;
+}
+
+#about section div img {
     width: 20rem;
+    border-radius: 50%;
+}
+
+.about-text {
+    width: 20rem;
+    margin-right: 25rem;
+}
+
+/* FOOTER */
+
+footer {
+    color: var(--bgColor);
+    text-align: center;
+    background-color: var(--fontColor);
+    height: 9.2rem;
 }
